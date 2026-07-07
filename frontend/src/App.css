@@ -1,0 +1,222 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar .brand {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--accent-dark);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.usuario-actual {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.nav-links button {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: var(--text);
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 32px 64px;
+  text-align: left;
+}
+
+.form-container {
+  max-width: 420px;
+  margin: 48px auto;
+  padding: 32px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.form-container form,
+.form-inline {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+button[type="submit"], .filtros button, section button {
+  margin-top: 14px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+}
+
+button[type="submit"]:hover, .filtros button:hover {
+  background: var(--accent-dark);
+}
+
+.tipo-selector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tipo-selector button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.tipo-selector button.activo {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.error {
+  color: var(--danger);
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.exito {
+  color: var(--accent-dark);
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filtros input {
+  flex: 1;
+  min-width: 160px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.tarjeta {
+  display: block;
+  padding: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.tarjeta h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.tarjeta .establecimiento {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+
+.tarjeta .precio {
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin-top: 8px;
+}
+
+.tarjeta .tiempo {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.detalle {
+  max-width: 600px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.detalle p {
+  margin: 8px 0;
+}
+
+.aviso {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.tabla th, .tabla td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  font-size: 14px;
+}
+
+.tabla button {
+  margin: 0 4px 0 0;
+  padding: 6px 10px;
+  font-size: 13px;
+}
